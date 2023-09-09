@@ -7,7 +7,7 @@ This encompasses
 - ``functions``
 - ``and more.``
 
-## Libraries that I used (updated: 9.9.23)
+## Libraries
 
 ### 1. <stdio.h> - Standard Input and Output Library
 
