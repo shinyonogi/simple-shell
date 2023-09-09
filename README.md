@@ -33,13 +33,13 @@ This encompasses
 - Explanation: It's essential for many low-level system operations, often in Unix-based systems.
 - Important Features: system calls like fork(), pipe(), sleep, File and Direcotry access functions, Process control functions, etc.
 
-## <sys/types.h> - Data Types
+## 5. <sys/types.h> - Data Types
 
 - Description: This header defines various data types used in system calls.
 - Explanation: These types are typically used alongside other system libraries for more precise functionaliry and control.
 - Important Features: Defines data types like pid_t, ssize_t, Provides type definitions that are used with system call functions.
 
-# <sys/wait.h> - Wait Functions
+## 6. <sys/wait.h> - Wait Functions
 
 - Description: This header provides the means of process synchronization.
 - Explanation: It's used with system calls that involve waiting for processes, lie when a parent process waits for a child process to finish.
