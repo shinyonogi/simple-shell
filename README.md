@@ -16,3 +16,8 @@ This encompasses
 - Important features: Input functions like scanf(), Output functions like prinf(), File operations like fopen(), etc.
 
 ### 2. <stdlib.h> - Standard Utility Library
+
+- Description: This library provides general purpose functions, including dynamic memory management, random number generation and system calls.
+- Explanation: It offers tools that are commonly needed in various applications, regardless of their specific tasks.
+- Important Features: Memory allocation functions like malloc() & free(), system-realated functions like system() & exit(), conversion functions like atoi().
+
