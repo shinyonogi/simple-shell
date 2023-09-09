@@ -8,3 +8,10 @@ This encompasses
 - ``libraries``
 - ``functions``
 - ``and more.``
+
+## Libraries (9.9.23)
+
+### 1. <stdio.h> - Standard Input and Output Library
+
+- Description: This library provides functionalities for data input and output.
+- Explanation: Most programs require a way to read.
