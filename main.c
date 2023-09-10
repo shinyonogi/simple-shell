@@ -19,7 +19,9 @@ int main() {
             input[len-1] = '\0';
         }
 
-        printf("The command: %s\n", input);
+        //printf("The command: %s\n", input);
+        char *token = strtok(input, " ");
+
     }
 
     return 0;
