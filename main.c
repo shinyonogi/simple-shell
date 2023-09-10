@@ -19,10 +19,6 @@ int main() {
             input[len-1] = '\0';
         }
 
-        /*
-        printf("input: %s\n", input);
-        */
-
         char *token = strtok(input, " ");
         int i = 0;
         while (token != NULL) {
@@ -31,12 +27,6 @@ int main() {
             token = strtok(NULL, " ");
         }
         args[i] = NULL;
-
-        /*
-        for (int i = 0; i < 10; i++) {
-            printf("arg %d: %s\n", i, args[i]);
-        }
-        */
 
         if (strcmp(args[0], "exit") == 0) {
             exit(0);
