@@ -19,7 +19,9 @@ int main() {
             input[len-1] = '\0';
         }
 
-        //printf("The command: %s\n", input);
+        /*
+        printf("input: %s\n", input);
+        */
 
         char *token = strtok(input, " ");
         int i = 0;
@@ -29,6 +31,29 @@ int main() {
             token = strtok(NULL, " ");
         }
         args[i] = NULL;
+
+        /*
+        for (int i = 0; i < 10; i++) {
+            printf("arg %d: %s\n", i, args[i]);
+        }
+        */
+
+        if (strcmp(args[0], "exit") == 0) {
+            exit(0);
+        }
+
+        pid_t pid = fork();
+
+        if (pid == 0) {
+            execvp(args[0], args);
+            perror("Failed to execute the command!");
+            exit(1);
+        }else if (pid < 0) {
+            perror("Failed to fork");
+        }else {
+            wait(NULL);
+        }
+
     }
 
     return 0;
