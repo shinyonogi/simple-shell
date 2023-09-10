@@ -20,8 +20,15 @@ int main() {
         }
 
         //printf("The command: %s\n", input);
-        char *token = strtok(input, " ");
 
+        char *token = strtok(input, " ");
+        int i = 0;
+        while (token != NULL) {
+            args[i] = token;
+            i++;
+            token = strtok(NULL, " ");
+        }
+        args[i] = NULL;
     }
 
     return 0;
