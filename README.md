@@ -45,3 +45,12 @@ This encompasses
 - Explanation: It's used with system calls that involve waiting for processes, lie when a parent process waits for a child process to finish.
 - Important Features: Functions like wait(), waitpid(), Macros to analyze the status code like WIFEXITED(), WEXITSTATUS(), etc.
 
+## C things...
+
+### Strings and array of Char
+- In the first line of the main function, I'm declaring: char input[512];
+- Explanation: In C, there isn't a native 'String' data tyoes as seen in some other languages. Instead, strings are represented using arrays of characters. To denote the end of string, C uses a null character ``'\0'``. Since C doesn't natively support dynamic arrays, when you declare a charcter array for a string, you must specify its size in advance to allocate the required memory. This size should be large enough to accomodate the content of the string and the terminating null character.
+
+### Pointers
+In the second line of the main function, I', delcaring: char *args[10].
+
