@@ -55,9 +55,15 @@ This encompasses
 - In the second line of the main function, I'm delcaring: char *args[10].
 - In C, one of the fundamental concepts is that of the pointer. While pointers exist in other programming languages, they are often abstracted away for simplicity and security reasons. As its core, a pointer in C holds the memory addrss of another variable. For instance, if you declare an integer variable, you can also have pointer that stores the address of where this integer is located in memory. In contemporary operating systems like UNIX, the address is usually a virtual memory address.When it comes to strings in C, which are essentially arrays of characters, the name of the array represents the addrss of its first element. For instance, if you declare a character array (often used as a string) name 'input' like so: 'char input[512]', the name 'input' by itself represents the address of the first character in the array. To retireve the value stored at that address, you can either use the deference operator on the pointer, like '*input', or access the first element of the array directly with 'input[0]'. Admittedly, the syntax related to pointer can be a bit perplexing initially, but with practice, it should become more intuitive. Anw: With char *args[10], I'm declaring an array of pointers (size 10) that points on a string.
 
-## fgets() function
+### fgets() function
 
 - fgets() is a function in C that is used to read a string from an input stream, typically from standard input or from a file. It is defined as following: ``char *fgets(char *str, int n, FILE *stream);``
 - Arguments: 1. str: A pointer to an array where the input string will be stored, 2. n: The maxium number of characters to be read (including the null character). Typically, this is the size of the array 'str', 3. stream: A pointer to the file or input stream from which to read. This could be a file pointer returned by functions like 'fopen()', or standard streams like 'stdin' (in my case).
+
+### strlen() function
+
+- strlen() is a function provided by the string.h library in C, designed to facilitate operations on strings. Its primary purpose is to computhe the length of a string by counting the number of characters until it reaches the terminating null character '\0'. It is defined as following: size_t strlen(const char *str).
+- Arguments: 1. str: A Pointer to the null-terminated string whose length you wish to determine.
+- Return Value: The function returns the length of the string, which is of type 'size_t'. size_t is an unsigned integer data type used to represent the size of objects in bytes. It ensures that you can safely store the size of any object the system can manage. The type 'size't is defined in the stddef.h header of the standard c library.
 
 
