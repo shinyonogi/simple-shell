@@ -66,4 +66,8 @@ This encompasses
 - Arguments: 1. str: A Pointer to the null-terminated string whose length you wish to determine.
 - Return Value: The function returns the length of the string, which is of type 'size_t'. size_t is an unsigned integer data type used to represent the size of objects in bytes. It ensures that you can safely store the size of any object the system can manage. The type 'size't is defined in the stddef.h header of the standard c library.
 
+### Working with string in C...
+
+- In C, when user input is captured from standard input (typically using functions like 'fgets()'), the ending of character is often a newline ('\n') due to the Enter key press. C represents strings as arrays of characters that are terminated by a null character ('\0'), a convention essential for the proper functioning of functions within the string.h library. Therefore, to handle user input as a string for string manipulation operations, it's common to find the lenfth of the input using 'strlen()' and replace the newline character with a null terminator.
+
 
